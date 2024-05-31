@@ -1,0 +1,45 @@
+
+#How to run tests using pytest
+Microsoft Windows [Version 10.0.22631.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Rahul Tripathi>cd D:\Eclipse-workspace\CucumberDemoProject\features\steps\
+
+C:\Users\Rahul Tripathi>D:
+
+D:\Eclipse-workspace\CucumberDemoProject\features\steps>pytests -s -v steps.py
+'pytests' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Eclipse-workspace\CucumberDemoProject\features\steps>pytest -s -v steps.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.12.0, pytest-8.2.1, pluggy-1.5.0 -- D:\Softwares\python 3.12\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.0', 'Platform': 'Windows-11-10.0.22631-SP0', 'Packages': {'pytest': '8.2.1', 'pluggy': '1.5.0'}, 'Plugins': {'anyio': '4.0.0', 'bdd': '7.1.2', 'html': '4.1.1', 'metadata': '3.1.1', 'reporter': '0.5.3'}}
+rootdir: D:\Eclipse-workspace\CucumberDemoProject\features\steps
+plugins: anyio-4.0.0, bdd-7.1.2, html-4.1.1, metadata-3.1.1, reporter-0.5.3
+collected 1 item
+
+steps.py::test_step_given_configured_environment PASSED
+
+================================================== 1 passed in 0.02s ==================================================
+
+D:\Eclipse-workspace\CucumberDemoProject\features\steps>cd D:\Eclipse-workspace\CucumberDemoProject\features
+
+
+=====================================================================
+How to run Feature file using Behave 
+D:\Eclipse-workspace\CucumberDemoProject\features>behave
+Feature: Example feature # example.feature:20
+
+  Scenario: Simple scenario                   # example.feature:21
+    Given I have a configured BDD environment # steps/steps.py:3
+    When I write a scenario                   # steps/steps.py:7
+    Then I should be able to run it           # steps/steps.py:11
+
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+3 steps passed, 0 failed, 0 skipped, 0 undefined
+Took 0m0.000s
+
+D:\Eclipse-workspace\CucumberDemoProject\features>
